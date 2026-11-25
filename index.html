@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10110f">
-  <meta name="description" content="Oficina de Luxo — serviços de manutenção, cuidado e estética automóvel. Solicite um orçamento personalizado.">
-  <title>Oficina de Luxo | Cuidado automóvel</title>
+  <meta name="description" content="Projecto demonstrativo de um site para uma oficina automóvel, criado para portefólio de criação de sites.">
+  <title>Oficina de Luxo | Projecto demonstrativo</title>
   <style>
     :root{color-scheme:dark;--bg:#10110f;--surface:#191b18;--surface-2:#20221e;--gold:#d8b66e;--gold-light:#f0d69a;--text:#f6f3eb;--muted:#b8b6ad;--line:#ffffff1c;--max:1160px}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.container{width:min(var(--max),92%);margin-inline:auto}
+    .demo-notice{padding:9px 16px;text-align:center;background:#302714;color:#f3dfad;border-bottom:1px solid #d8b66e66;font-size:12px;font-weight:800;letter-spacing:.08em}.demo-notice strong{color:#fff}
     .skip{position:absolute;left:-9999px;top:8px;background:var(--gold);color:#111;padding:10px;z-index:20}.skip:focus{left:8px}
     header{position:sticky;top:0;z-index:10;background:#10110fee;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{font-size:17px;font-weight:900;letter-spacing:.14em}.logo span{color:var(--gold)}.nav-links{display:flex;align-items:center;gap:28px;color:#e3e0d7;font-size:14px}.nav-links a:hover,.nav-links a:focus-visible{color:var(--gold)}.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:9px 12px;border-radius:4px}
     .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border:1px solid var(--gold);border-radius:3px;background:var(--gold);color:#17150f;font-weight:800;cursor:pointer;transition:transform .2s,background .2s}.button:hover{background:var(--gold-light);transform:translateY(-2px)}.button.secondary{background:transparent;color:var(--gold)}.button.secondary:hover{background:#d8b66e16}.button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold-light);outline-offset:3px}
@@ -25,6 +26,7 @@
 </head>
 <body>
   <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+  <div class="demo-notice"><strong>PROJECTO DEMONSTRATIVO</strong> · Marca fictícia criada para apresentação de serviços de criação de sites.</div>
   <header>
     <div class="container nav">
       <a class="logo" href="#inicio" aria-label="Oficina de Luxo, página inicial">OFICINA <span>DE LUXO</span></a>
@@ -57,7 +59,7 @@
     <section id="sobre">
       <div class="container about">
         <div class="about-image" role="img" aria-label="Profissional a trabalhar num automóvel"></div>
-        <div class="about-copy"><div class="eyebrow">Oficina de Luxo</div><h2>Mais do que um serviço. Um compromisso com a qualidade.</h2><p>Valorizamos o cuidado, a transparência e a atenção às necessidades de cada automóvel. O nosso objectivo é que cada cliente saiba o que está a ser feito e porquê.</p><p class="muted">Os detalhes sobre a equipa, instalações e experiência podem ser acrescentados quando forem confirmados pela oficina.</p><a class="button secondary" href="#contacto">Fale connosco</a></div>
+        <div class="about-copy"><div class="eyebrow">Sobre este projecto</div><h2>Um exemplo de presença digital para o sector automóvel.</h2><p>A Oficina de Luxo é uma marca fictícia utilizada nesta demonstração. Este site ilustra como uma oficina pode apresentar os seus serviços, explicar a sua proposta de valor e receber pedidos de orçamento online.</p><p class="muted">Textos, serviços, imagens e identidade visual são elementos de demonstração. Não representam uma empresa real nem confirmam a existência de instalações ou equipa.</p><a class="button secondary" href="#contacto">Fale connosco</a></div>
       </div>
     </section>
     <section>
@@ -68,7 +70,7 @@
     </section>
     <section id="contacto">
       <div class="container contact-layout">
-        <div class="contact"><div class="eyebrow">Entre em contacto</div><h2>Conte-nos o que precisa.</h2><p class="muted">Preencha os dados e prepare o seu pedido. Poderá rever a mensagem antes de a enviar pelo WhatsApp.</p><p class="hint">Ainda não foram publicados endereço, telefone ou horário porque esses dados oficiais precisam de confirmação.</p></div>
+        <div class="contact"><div class="eyebrow">Demonstração interactiva</div><h2>Experimente um pedido de orçamento.</h2><p class="muted">Este formulário demonstra uma possível experiência para os clientes de uma oficina. Os dados são usados apenas para preparar uma mensagem de exemplo no WhatsApp.</p><p class="hint">A marca é fictícia. Não envie dados pessoais reais: não existe uma oficina destinatária associada a este formulário.</p></div>
         <form class="contact-card" id="quote-form">
           <div class="field"><label for="customer-name">Nome</label><input id="customer-name" name="name" autocomplete="name" required maxlength="80" placeholder="O seu nome"></div>
           <div class="field"><label for="customer-phone">O seu contacto</label><input id="customer-phone" name="phone" autocomplete="tel" required maxlength="40" placeholder="Telefone ou WhatsApp"></div>
@@ -81,7 +83,7 @@
       </div>
     </section>
   </main>
-  <footer><div class="container footer-inner"><span>© <span id="year"></span> Oficina de Luxo. Todos os direitos reservados.</span><span>Qualidade e cuidado em cada detalhe.</span></div></footer>
+  <footer><div class="container footer-inner"><span>© <span id="year"></span> Oficina de Luxo. Todos os direitos reservados.</span><span>Projecto demonstrativo · Não representa uma empresa real.</span></div></footer>
   <noscript><p class="no-script">Para utilizar o formulário e o menu, active o JavaScript no seu navegador.</p></noscript>
   <script>
     const menuButton = document.getElementById('menu-toggle');
