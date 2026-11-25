@@ -1,46 +1,124 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt-AO">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Oficina de Luxo — cuidado automóvel premium, manutenção e estética automóvel.">
-<title>Oficina de Luxo | Cuidado automóvel premium</title>
-<style>
-:root{--bg:#0b0c0e;--panel:#141619;--gold:#d6b36a;--muted:#a8a8a8;--white:#f5f3ee}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font:16px/1.6 Inter,system-ui,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;background:#0b0c0eeb;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff16;z-index:5}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.12em}.brand span{color:var(--gold)}nav{display:flex;gap:26px;color:#ddd;font-size:14px}nav a:hover,.gold{color:var(--gold)}
-.btn{display:inline-block;padding:12px 20px;background:var(--gold);color:#141414;font-weight:800;border:0;border-radius:3px;cursor:pointer}.btn.outline{background:transparent;border:1px solid var(--gold);color:var(--gold)}
-.hero{min-height:590px;display:grid;align-items:center;background:linear-gradient(90deg,#08090af2 0%,#08090ac9 48%,#08090a55 100%),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2000&q=85') center/cover}.hero-inner{padding:90px 0;max-width:720px}.eyebrow{color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-size:12px;font-weight:800}.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.04;margin:18px 0}.hero p{color:#d0d0d0;max-width:560px;font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-section{padding:82px 0}.section-head{max-width:650px;margin-bottom:34px}.section-head h2{font-size:clamp(30px,4vw,44px);line-height:1.1;margin:10px 0}.section-head p,.muted{color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid #ffffff13;padding:26px;border-radius:5px}.card .num{color:var(--gold);font-size:13px;letter-spacing:.12em}.card h3{margin:12px 0 6px}.price{color:var(--gold);font-weight:800;margin:18px 0}.card p{color:var(--muted);min-height:50px}.card button{width:100%}
-.banner{background:linear-gradient(110deg,#17191c,#24201a);border:1px solid #d6b36a55;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:24px}.banner h2{margin:0;font-size:30px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.about-art{min-height:340px;background:linear-gradient(0deg,#0007,#0002),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=80') center/cover;border-radius:4px}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contact-box{background:var(--panel);padding:28px;border:1px solid #ffffff18}input,textarea{width:100%;padding:13px;margin:7px 0 15px;background:#0b0c0e;border:1px solid #ffffff30;color:white;font:inherit}footer{padding:28px 0;border-top:1px solid #ffffff18;color:var(--muted);font-size:13px}
-#cart{position:fixed;right:20px;bottom:20px;z-index:8;background:var(--gold);color:#111;border:0;border-radius:50px;padding:14px 20px;font-weight:900;box-shadow:0 8px 30px #0008;cursor:pointer}
-#notice{position:fixed;bottom:82px;right:20px;background:#202326;padding:14px 18px;border:1px solid var(--gold);display:none;max-width:320px;z-index:8}
-@media(max-width:760px){nav{display:none}.grid{grid-template-columns:1fr}.about,.contact{grid-template-columns:1fr}.hero{min-height:520px}.banner{display:block}.banner .btn{margin-top:20px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Oficina de Luxo — serviços de manutenção, cuidado e estética automóvel. Solicite um orçamento personalizado.">
+  <title>Oficina de Luxo | Cuidado automóvel</title>
+  <style>
+    :root{color-scheme:dark;--bg:#10110f;--surface:#191b18;--surface-2:#20221e;--gold:#d8b66e;--gold-light:#f0d69a;--text:#f6f3eb;--muted:#b8b6ad;--line:#ffffff1c;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.container{width:min(var(--max),92%);margin-inline:auto}
+    .skip{position:absolute;left:-9999px;top:8px;background:var(--gold);color:#111;padding:10px;z-index:20}.skip:focus{left:8px}
+    header{position:sticky;top:0;z-index:10;background:#10110fee;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{font-size:17px;font-weight:900;letter-spacing:.14em}.logo span{color:var(--gold)}.nav-links{display:flex;align-items:center;gap:28px;color:#e3e0d7;font-size:14px}.nav-links a:hover,.nav-links a:focus-visible{color:var(--gold)}.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:9px 12px;border-radius:4px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border:1px solid var(--gold);border-radius:3px;background:var(--gold);color:#17150f;font-weight:800;cursor:pointer;transition:transform .2s,background .2s}.button:hover{background:var(--gold-light);transform:translateY(-2px)}.button.secondary{background:transparent;color:var(--gold)}.button.secondary:hover{background:#d8b66e16}.button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold-light);outline-offset:3px}
+    .hero{min-height:620px;display:grid;align-items:center;background:linear-gradient(90deg,#080907f5 0%,#080907d9 52%,#08090755 100%),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2000&q=85') center/cover}.hero-content{max-width:720px;padding:100px 0}.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}.hero h1{font-size:clamp(42px,7vw,78px);line-height:1.03;letter-spacing:-.04em;margin:18px 0}.gold{color:var(--gold)}.hero p{max-width:590px;color:#d2d0c8;font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    section{padding:88px 0}.section-head{max-width:690px;margin-bottom:36px}.section-head h2,.about h2,.contact h2{font-size:clamp(30px,4.4vw,48px);line-height:1.12;letter-spacing:-.025em;margin:10px 0 14px}.section-head p,.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:var(--surface);border:1px solid var(--line);padding:28px;border-radius:5px}.service-number{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.16em}.service h3{font-size:21px;margin:14px 0 8px}.service p{color:var(--muted);min-height:78px}.service .button{width:100%;margin-top:12px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}.about-image{min-height:390px;border-radius:5px;background:linear-gradient(0deg,#0005,#0001),url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=80') center/cover}.about-copy p{color:var(--muted)}
+    .promise{background:linear-gradient(110deg,#1a1c18,#242016);border:1px solid #d8b66e55;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:24px}.promise h2{font-size:clamp(25px,3vw,34px);line-height:1.2;margin:8px 0}.promise p{margin:0;color:var(--muted)}
+    .contact-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start}.contact-card{background:var(--surface);border:1px solid var(--line);padding:30px;border-radius:5px}.field{margin-bottom:17px}.field label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}.field input,.field textarea{width:100%;padding:13px 14px;border:1px solid #ffffff30;border-radius:3px;background:#10110f;color:var(--text)}.field textarea{resize:vertical;min-height:120px}.hint{font-size:13px;color:var(--muted)}.form-status{min-height:24px;color:var(--gold-light);font-size:14px;margin-top:12px}
+    footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .floating{position:fixed;right:18px;bottom:18px;z-index:8;border-radius:50px;box-shadow:0 8px 30px #0009}.no-script{padding:14px;background:#3b2c12;color:#fff}
+    @media(max-width:800px){.nav-links{display:none;position:absolute;top:76px;left:0;right:0;padding:20px 4%;background:#10110f;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu-toggle{display:inline-flex}.nav>.button{display:none}.grid{grid-template-columns:1fr}.service p{min-height:0}.about,.contact-layout{grid-template-columns:1fr;gap:28px}.about-image{min-height:280px}.hero{min-height:550px}.promise{display:block}.promise .button{margin-top:20px}section{padding:68px 0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="#">OFICINA <span>DE LUXO</span></a><nav><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#contacto">Contacto</a></nav><a class="btn outline" href="#contacto">Pedir orçamento</a></div></header>
-<main>
-<section class="hero"><div class="wrap hero-inner"><div class="eyebrow">Excelência em cada detalhe</div><h1>O seu carro merece<br><span class="gold">tratamento de luxo.</span></h1><p>Manutenção, cuidado e estética automóvel com atenção ao detalhe. Qualidade e confiança para quem exige o melhor.</p><div class="actions"><a class="btn" href="#servicos">Explorar serviços</a><a class="btn outline" href="#contacto">Falar connosco</a></div></div></section>
-<section id="servicos"><div class="wrap"><div class="section-head"><div class="eyebrow">O que fazemos</div><h2>Serviços para cuidar do seu automóvel</h2><p>Escolha o serviço pretendido e adicione-o ao seu pedido. Os valores são indicativos e devem ser confirmados pela oficina.</p></div><div class="grid">
-<article class="card"><div class="num">01 / MANUTENÇÃO</div><h3>Revisão e diagnóstico</h3><p>Verificação geral, diagnóstico e manutenção preventiva.</p><div class="price">Sob consulta</div><button class="btn" onclick="add('Revisão e diagnóstico')">Adicionar ao pedido</button></article>
-<article class="card"><div class="num">02 / ESTÉTICA</div><h3>Lavagem premium</h3><p>Limpeza cuidada do interior e exterior do veículo.</p><div class="price">Sob consulta</div><button class="btn" onclick="add('Lavagem premium')">Adicionar ao pedido</button></article>
-<article class="card"><div class="num">03 / PROTEÇÃO</div><h3>Polimento e proteção</h3><p>Tratamento da pintura para realçar o brilho e proteger a superfície.</p><div class="price">Sob consulta</div><button class="btn" onclick="add('Polimento e proteção')">Adicionar ao pedido</button></article>
-</div></div></section>
-<section id="sobre"><div class="wrap about"><div class="about-art" role="img" aria-label="Mecânico a trabalhar num automóvel"></div><div><div class="eyebrow">Oficina de Luxo</div><h2>Mais do que uma oficina. Um compromisso com a qualidade.</h2><p class="muted">Trabalhamos para oferecer um serviço atencioso, transparente e orientado para as necessidades de cada automóvel. Cada detalhe conta.</p><a class="btn outline" href="#contacto">Conheça-nos</a></div></div></section>
-<section><div class="wrap banner"><div><div class="eyebrow">Atendimento personalizado</div><h2>Vamos cuidar do seu próximo projeto?</h2><p class="muted">Envie-nos o seu pedido e entraremos em contacto.</p></div><a class="btn" href="#contacto">Solicitar orçamento</a></div></section>
-<section id="contacto"><div class="wrap contact"><div><div class="eyebrow">Fale connosco</div><h2>Peça o seu orçamento</h2><p class="muted">Preencha os seus dados e indique o serviço pretendido. Este formulário prepara uma mensagem para enviar por email.</p><p class="muted">Localização, telefone e horários podem ser adicionados quando nos fornecer os dados oficiais da oficina.</p></div><div class="contact-box"><form id="quote"><label>Nome</label><input id="name" required placeholder="O seu nome"><label>Contacto</label><input id="phone" required placeholder="Telefone ou WhatsApp"><label>Mensagem</label><textarea id="message" rows="4" placeholder="Modelo do veículo e serviço pretendido"></textarea><button class="btn" type="submit">Preparar pedido</button></form></div></div></section>
-</main>
-<footer><div class="wrap">© <span id="year"></span> Oficina de Luxo. Todos os direitos reservados. <span style="float:right">Feito com cuidado.</span></div></footer>
-<button id="cart" onclick="showCart()">Pedido (<span id="count">0</span>)</button><div id="notice" aria-live="polite"></div>
-<script>
-const items=[];
-function add(name){items.push(name);document.getElementById('count').textContent=items.length;toast(name+' adicionado ao pedido.')}
-function toast(t){const n=document.getElementById('notice');n.textContent=t;n.style.display='block';setTimeout(()=>n.style.display='none',2600)}
-function showCart(){if(!items.length){toast('Ainda não adicionou serviços ao pedido.');return}const msg='Pedido — Oficina de Luxo\n'+items.map((x,i)=>(i+1)+'. '+x).join('\n');const n=document.getElementById('notice');n.textContent=msg+'\n\nPreencha o formulário para continuar.';n.style.display='block';document.getElementById('message').value=msg;document.getElementById('contacto').scrollIntoView({behavior:'smooth'});}
-document.getElementById('quote').addEventListener('submit',e=>{e.preventDefault();const subject=encodeURIComponent('Pedido de orçamento — Oficina de Luxo');const body=encodeURIComponent('Nome: '+document.getElementById('name').value+'\nContacto: '+document.getElementById('phone').value+'\n\n'+document.getElementById('message').value+'\n\nServiços: '+items.join(', '));toast('Pedido preparado. Configure o email oficial da oficina para receber mensagens.');});
-document.getElementById('year').textContent=new Date().getFullYear();
-</script>
-</body></html>
+  <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#inicio" aria-label="Oficina de Luxo, página inicial">OFICINA <span>DE LUXO</span></a>
+      <nav class="nav-links" id="nav-links" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a><a href="#sobre">Sobre nós</a><a href="#contacto">Contacto</a>
+      </nav>
+      <a class="button secondary" href="#contacto">Pedir orçamento</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <div class="eyebrow">Excelência em cada detalhe</div>
+        <h1>O seu carro merece <span class="gold">tratamento de luxo.</span></h1>
+        <p>Manutenção, cuidado e estética automóvel com atenção ao detalhe. Um serviço pensado para quem valoriza qualidade e confiança.</p>
+        <div class="actions"><a class="button" href="#servicos">Conhecer serviços</a><a class="button secondary" href="#contacto">Solicitar orçamento</a></div>
+      </div>
+    </section>
+    <section id="servicos">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">O que fazemos</div><h2>Cuidados à medida do seu automóvel</h2><p>Conheça algumas das áreas de serviço. A disponibilidade, o preço e o prazo são confirmados após avaliação do veículo.</p></div>
+        <div class="grid">
+          <article class="service"><div class="service-number">01 / MANUTENÇÃO</div><h3>Revisão e diagnóstico</h3><p>Verificação geral, diagnóstico e manutenção preventiva de acordo com as necessidades do veículo.</p><button class="button secondary choose-service" type="button" data-service="Revisão e diagnóstico">Pedir este serviço</button></article>
+          <article class="service"><div class="service-number">02 / ESTÉTICA</div><h3>Lavagem premium</h3><p>Limpeza cuidada do interior e exterior para devolver ao automóvel uma aparência renovada.</p><button class="button secondary choose-service" type="button" data-service="Lavagem premium">Pedir este serviço</button></article>
+          <article class="service"><div class="service-number">03 / PROTEÇÃO</div><h3>Polimento e proteção</h3><p>Tratamento da pintura para realçar o brilho e ajudar a proteger a superfície do veículo.</p><button class="button secondary choose-service" type="button" data-service="Polimento e proteção">Pedir este serviço</button></article>
+        </div>
+      </div>
+    </section>
+    <section id="sobre">
+      <div class="container about">
+        <div class="about-image" role="img" aria-label="Profissional a trabalhar num automóvel"></div>
+        <div class="about-copy"><div class="eyebrow">Oficina de Luxo</div><h2>Mais do que um serviço. Um compromisso com a qualidade.</h2><p>Valorizamos o cuidado, a transparência e a atenção às necessidades de cada automóvel. O nosso objectivo é que cada cliente saiba o que está a ser feito e porquê.</p><p class="muted">Os detalhes sobre a equipa, instalações e experiência podem ser acrescentados quando forem confirmados pela oficina.</p><a class="button secondary" href="#contacto">Fale connosco</a></div>
+      </div>
+    </section>
+    <section>
+      <div class="container promise">
+        <div><div class="eyebrow">Atendimento personalizado</div><h2>Vamos cuidar do seu próximo projecto?</h2><p>Explique-nos o que o seu automóvel precisa e solicite uma avaliação.</p></div>
+        <a class="button" href="#contacto">Pedir orçamento</a>
+      </div>
+    </section>
+    <section id="contacto">
+      <div class="container contact-layout">
+        <div class="contact"><div class="eyebrow">Entre em contacto</div><h2>Conte-nos o que precisa.</h2><p class="muted">Preencha os dados e prepare o seu pedido. Poderá rever a mensagem antes de a enviar pelo WhatsApp.</p><p class="hint">Ainda não foram publicados endereço, telefone ou horário porque esses dados oficiais precisam de confirmação.</p></div>
+        <form class="contact-card" id="quote-form">
+          <div class="field"><label for="customer-name">Nome</label><input id="customer-name" name="name" autocomplete="name" required maxlength="80" placeholder="O seu nome"></div>
+          <div class="field"><label for="customer-phone">O seu contacto</label><input id="customer-phone" name="phone" autocomplete="tel" required maxlength="40" placeholder="Telefone ou WhatsApp"></div>
+          <div class="field"><label for="vehicle">Veículo</label><input id="vehicle" name="vehicle" maxlength="100" placeholder="Ex.: Toyota Corolla, 2018"></div>
+          <div class="field"><label for="request">Serviço ou mensagem</label><textarea id="request" name="request" required maxlength="1200" placeholder="Descreva o serviço que pretende..."></textarea></div>
+          <button class="button" type="submit">Preparar pedido no WhatsApp</button>
+          <p class="hint">Ao continuar, o WhatsApp será aberto para escolher o destinatário e enviar a mensagem. Nenhum dado é guardado neste site.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><span>© <span id="year"></span> Oficina de Luxo. Todos os direitos reservados.</span><span>Qualidade e cuidado em cada detalhe.</span></div></footer>
+  <noscript><p class="no-script">Para utilizar o formulário e o menu, active o JavaScript no seu navegador.</p></noscript>
+  <script>
+    const menuButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuButton.addEventListener('click', () => {
+      const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!isOpen));
+      navLinks.classList.toggle('open', !isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }));
+    document.querySelectorAll('.choose-service').forEach(button => button.addEventListener('click', () => {
+      const request = document.getElementById('request');
+      const service = button.dataset.service;
+      request.value = request.value ? request.value + '\n' + service : service;
+      document.getElementById('contacto').scrollIntoView({behavior: 'smooth'});
+      request.focus({preventScroll: true});
+    }));
+    document.getElementById('quote-form').addEventListener('submit', event => {
+      event.preventDefault();
+      const name = document.getElementById('customer-name').value.trim();
+      const phone = document.getElementById('customer-phone').value.trim();
+      const vehicle = document.getElementById('vehicle').value.trim();
+      const request = document.getElementById('request').value.trim();
+      const message = [
+        'Olá! Gostaria de solicitar um orçamento à Oficina de Luxo.',
+        'Nome: ' + name,
+        'Contacto: ' + phone,
+        vehicle ? 'Veículo: ' + vehicle : '',
+        'Pedido: ' + request
+      ].filter(Boolean).join('\n');
+      document.getElementById('form-status').textContent = 'A abrir o WhatsApp. Escolha o contacto da oficina e confirme o envio da mensagem.';
+      window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
